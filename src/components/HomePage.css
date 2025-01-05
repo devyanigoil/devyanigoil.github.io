@@ -1,0 +1,42 @@
+.homepage {
+  font-family: "EB Garamond", serif;
+  text-align: left;
+  margin-top: 20rem;
+  /* margin-bottom: 25rem; */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;   /* Removes top margin */
+  margin-bottom: 0.1rem; /* Reduce bottom margin to control space between headings */
+  padding: 0;     /* Remove any default padding */
+}
+
+h1 {
+  font-size: 3rem;
+  color: #000000;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #696a6b;
+  display: inline-block;
+  font-weight: 500;
+}
+
+h2 span {
+  color: #696a6b; /* The color for the text being typed */
+}
+
+.cursor {
+  display: inline-block;
+  animation: blink 0.7s step-end infinite;
+  font-size: 1.5rem;
+  margin-left: 3px;
+}
+
+/* Blinking cursor animation */
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}

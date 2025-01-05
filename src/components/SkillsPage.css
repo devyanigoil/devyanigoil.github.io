@@ -1,0 +1,36 @@
+.skills-page {
+    text-align: left;
+    /* min-height: 100vh; */
+    /* margin: 20px auto; */
+  }
+  
+  .skills-page h1 {
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    color: #2c3e50;
+    text-align: left;
+    margin-bottom: 30px;
+  }
+  
+  .skills-list {
+    list-style-type: circle;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .category-elements {
+    font-size: 1.1rem;
+    font-family: "Nunito", serif;
+    color: #34495e;
+    /* font-weight: bold; */
+    margin-top: 10px;
+    text-decoration: none;
+  }
+
+  .skill-item {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    margin-bottom: 8px;
+    /* margin-left: 20px; Indent skills under categories */
+  }
+  

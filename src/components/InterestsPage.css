@@ -1,0 +1,78 @@
+.interests-page {
+    /* min-height: 100vh; */
+    margin: 20px auto;
+  }
+  
+  .interests-page h1 {
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    text-align: left;
+    margin-bottom: 3rem;
+    color: #2c3e50;
+  }
+  
+  .interests-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .interest-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .interest-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 1500px rgba(0, 0, 0, 0.15);
+  }
+  
+  .icon {
+    font-size: 3rem;
+    /* color: #3498db; */
+    margin-bottom: 15px;
+    transition: color 0.3s ease;
+  }
+  
+  .icon-problem-solving {
+    color: #c43e2f;
+  }
+  
+  .icon-devops {
+    color: #9b59b6;
+  }
+  
+  .icon-full-stack {
+    color: #f39c12;
+  }
+  
+  .icon-scalable {
+    color: #f1c40f;
+  }
+  
+  .icon-cloud {
+    color: #346edb;
+  }
+  
+  .icon-painting {
+    color: #247625;
+  }
+  .interest-card h2 {
+    font-size: 1.3rem;
+    font-family: "Nunito", serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .interest-card p {
+    font-size: 1rem;
+    font-family: "Nunito", serif;
+    line-height: 1.5;
+    color: #666;
+  }
+  

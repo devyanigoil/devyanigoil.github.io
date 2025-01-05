@@ -1,0 +1,26 @@
+.vertical-timeline-element-content {
+    /* background: #ffffff; */
+    /* color: #2c3e50; */
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    /* border-radius: 8px; */
+    text-align: left;
+  }
+  
+  .vertical-timeline-element-content h1 {
+    color: #2c3e50;
+  }
+
+  .vertical-timeline-element-content h3,
+  .vertical-timeline-element-content h4 {
+    color: #2c3e50;
+  }
+  
+  .vertical-timeline-element-content p {
+    font-size: 1rem;
+    color: #34495e;
+  }
+  
+  .vertical-timeline-element-icon {
+    box-shadow: none;
+  }
+  
