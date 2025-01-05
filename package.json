@@ -6,7 +6,7 @@
     "react": "19.0.0",
     "react-dom": "19.0.0"
   },
-  "homepage": "https://devyanigoil.github.io/",
+  "homepage": "https://devyanigoil.github.io/build",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
     "@fortawesome/free-brands-svg-icons": "^6.7.2",
