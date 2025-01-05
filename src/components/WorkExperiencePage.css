@@ -1,15 +1,26 @@
-.vertical-timeline-element-content {
-    /* background: #ffffff; */
-    /* color: #2c3e50; */
-    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
-    /* border-radius: 8px; */
+.work-experience {
+    background-color: #f7f6f6; 
+    padding: "40px 20px"; 
+    min-height: "100vh";
     text-align: left;
+}
+
+.work-experience h1 {
+    text-align: left;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    padding: 10px 10px;
+}
+
+.vertical-timeline-element-content {
+    background: #ffffff;
+    color: #2c3e50;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
   }
   
-  .vertical-timeline-element-content h1 {
-    color: #2c3e50;
-  }
-
   .vertical-timeline-element-content h3,
   .vertical-timeline-element-content h4 {
     color: #2c3e50;

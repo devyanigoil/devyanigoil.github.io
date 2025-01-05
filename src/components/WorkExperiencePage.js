@@ -2,6 +2,7 @@ import React from "react";
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { FaBriefcase } from "react-icons/fa";
+import './WorkExperiencePage.css';
 
 const WorkExperiencePage = () => {
   const experiences = [
@@ -9,31 +10,31 @@ const WorkExperiencePage = () => {
       title: "Software Engineer",
       subtitle: "Akamai Technologies",
       duration: "Aug 2023 - Aug 2024",
-      description: "Developed and optimized the CloudPulse gateway using OpenTelemetry, Kubernetes, and Flask, enhancing data collection, secure communication (mTLS), and system resilience. Conducted load testing, integrated logging with Loki, and delivered MVP demos showcasing performance and reliability to executives.",
+      description: "Designed the gateway component of CloudPulse, Akamai’s comprehensive cloud monitoring solution for Linode environments and customer applications, aimed at improving application performance, availability, and throughput. Deployed crucial features like data persistence and mTLS, enhancing data collection and system resilience. Conducted load testing, integrated logging with Loki, and delivered MVP demos showcasing performance and reliability to executives.",
       icon: <FaBriefcase />,
       iconBg: "#6a1b9a",
     },
     {
-      title: "Software Development Intern",
-      subtitle: "Tech Innovators Inc.",
-      duration: "June 2023 - August 2023",
-      description: "Developed RESTful APIs and integrated CI/CD pipelines for deployment.",
+      title: "Spring Intern",
+      subtitle: "Akamai technologies",
+      duration: "Jan 2023 - Jul 2023",
+      description: "Conceptualized an end-to-end telemetry systems with OpenTelemetry and Grafana on Linode Kubernetes clusters, visualizing logs in Grafana from VictoriaMetrics, automated testing, and collaborated on CI/CD pipelines using Jenkins and GitLab.",
       icon: <FaBriefcase />,
       iconBg: "#0277bd",
     },
     {
-      title: "Full Stack Developer Intern",
-      subtitle: "Startup Solutions",
-      duration: "Jan 2023 - May 2023",
-      description: "Built user-friendly React interfaces and optimized backend systems.",
+      title: "Summer Intern",
+      subtitle: "Akamai Technologies",
+      duration: "Jun 2022 - Jul 2022",
+      description: "Enhanced the CloudUsage app’s performance by 70% for generating Azure billing logs by implementing multithreading in Python. Optimized query execution, and reduced processing time from 510 to 160 seconds for 600 storage accounts, ensuring efficient deployment.",
       icon: <FaBriefcase />,
       iconBg: "#ef6c00",
     },
   ];
 
   return (
-    <div style={{ background: "#f9f9f9", padding: "40px 20px", minHeight: "100vh" }}>
-      <h1 style={{ color: "#2c3e50", marginBottom: "30px" }}>Work Experience</h1>
+    <div className="work-experience">
+      <h1>WORK EXPERIENCE</h1>
       <VerticalTimeline>
         {experiences.map((exp, index) => (
           <VerticalTimelineElement
