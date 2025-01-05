@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  text-align: left;
 }
 
 .App-logo {
@@ -26,6 +26,21 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.content {
+  margin-left: 30rem; /* This pushes the content to the right so it's not hidden under the sidebar */
+  position: absolute;
+  overflow-y: auto; /* Allows the content to scroll */
+  font-family: "EB Garamond", serif;
+  /* width: 100%; */
+}
+
+.section {
+  /* margin-bottom: 4rem; */
+  padding: 5rem 3rem; /* Adjust spacing for each section */
+  /* min-height: 100vh; Make each section full-screen */
+  /* border-bottom: 1px solid #ddd; */
 }
 
 @keyframes App-logo-spin {
