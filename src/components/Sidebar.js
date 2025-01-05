@@ -8,7 +8,7 @@ const Sidebar = () => {
       <div className="sidebar">
         <div className="profile">
           <img
-            src="/profilePhoto.jpg"
+            src="${process.env.PUBLIC_URL}/profilePhoto.jpg"
             alt="DEVYANI GOIL"
             className="profile-photo"
           />
