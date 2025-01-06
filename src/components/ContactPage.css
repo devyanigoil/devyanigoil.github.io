@@ -1,0 +1,62 @@
+.contact-section {
+    /* padding: 50px; */
+    text-align: center;
+    font-family: "Nunito", serif;
+    max-width: 90%;
+    /* background-color: #f9f9f9; */
+  }
+  
+  .contact-section h1 {
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-family: "EB Garamond", serif;
+  }
+  
+  .contact-details {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 40px;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .contact-item a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .contact-item a:hover {
+    text-decoration: underline;
+  }
+  
+  .contact-icon {
+    font-size: 1.5rem;
+    margin-right: 10px;
+    color: #346edb;
+    /* color: #007bff; */
+  }
+  
+  .location-icon{
+    font-size: 1.5rem;
+    margin-right: 10px;
+    color: #EA4335;
+  }
+  .map-container {
+    margin-top: 30px;
+    width: 100%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  

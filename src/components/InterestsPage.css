@@ -1,6 +1,7 @@
 .interests-page {
     /* min-height: 100vh; */
-    margin: 20px auto;
+    /* margin: 20px auto; */
+    max-width: 90%;
   }
   
   .interests-page h1 {
@@ -39,7 +40,7 @@
   }
   
   .icon-problem-solving {
-    color: #c43e2f;
+    color: #EA4335;
   }
   
   .icon-devops {

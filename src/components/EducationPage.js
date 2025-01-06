@@ -21,7 +21,7 @@ const EducationPage = () => {
         {activeSection === "masters" && (
           <div className="education-details">
             <p>Masters in Computer Science</p>
-            <p>University of Massachusetts, Amherst</p>
+            <p>University of Massachusetts, Amherst </p>
             <p>GPA: 3.77/4</p>
           </div>
         )}

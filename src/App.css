@@ -38,9 +38,13 @@
 
 .section {
   /* margin-bottom: 4rem; */
-  padding: 5rem 3rem; /* Adjust spacing for each section */
+  padding: 3rem 3rem; /* Adjust spacing for each section */
   /* min-height: 100vh; Make each section full-screen */
   /* border-bottom: 1px solid #ddd; */
+}
+
+.section-left{
+  padding: 3rem 1rem;
 }
 
 @keyframes App-logo-spin {

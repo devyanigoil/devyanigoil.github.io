@@ -23,9 +23,9 @@ const Sidebar = () => {
           <a href="#skills">SKILLS</a>
           <a href="#education">EDUCATION</a>
           <a href="#experience">EXPERIENCE</a>
+          <a href="#por">POSITIONS OF RESPONSIBILITY</a>
           <a href="#certifications">CERTIFICATIONS</a>
           <a href="#projects">PROJECTS</a>
-          <a href="#achievements">ACHIEVEMENTS</a>
           <a href="#contact">CONTACT</a>
         </nav>
         <div className="social-icons">

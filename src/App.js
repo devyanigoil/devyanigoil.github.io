@@ -6,6 +6,10 @@ import InterestsPage from './components/InterestsPage';
 import SkillsPage from './components/SkillsPage';
 import EducationPage from './components/EducationPage';
 import WorkExperiencePage from './components/WorkExperiencePage';
+import POR from './components/POR';
+import Certifications from './components/Certifications';
+import ContactPage from './components/ContactPage';
+import ProjectsPage from './components/ProjectsPage';
 
 function App() {
   return (
@@ -27,8 +31,20 @@ function App() {
         <div id="education" className="section">
           <EducationPage />
         </div>
-        <div id="experience" className="section">
+        <div id="experience" className="section-left">
           <WorkExperiencePage />
+        </div>
+        <div id="por" className="section-left">
+          <POR />
+        </div>
+        <div id="certifications" className="section">
+          <Certifications />
+        </div>
+        <div id="projects" className="section">
+          <ProjectsPage />
+        </div>
+        <div id="contact" className="section-left">
+          <ContactPage />
         </div>
       </div>
     </div>

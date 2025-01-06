@@ -1,8 +1,11 @@
 .work-experience {
-    background-color: #f7f6f6; 
-    padding: "40px 20px"; 
+    /* background-color: #f7f6f6;  */
+    /* padding: "40px 0px";  */
     min-height: "100vh";
     text-align: left;
+    font-family: "EB Garamond", serif;
+    max-width: 90%;
+    /* font-family: "Nunito", serif; */
 }
 
 .work-experience h1 {
@@ -11,15 +14,41 @@
     letter-spacing: 3px;
     color: #2c3e50;
     margin-bottom: 30px;
-    padding: 10px 10px;
+    padding: 1rem 2rem;
+    font-family: "EB Garamond", serif;
+}
+
+.vertical-timeline-element {
+    margin: 2rem 0;
+}
+
+.vertical-timeline::before {
+    background: #f7f6f6;
+}
+
+.vertical-timeline .vertical-timeline-element:last-child .vertical-timeline-element-icon {
+    background: #ffffff; /* Change this color to your desired circle color */
+    border: 7px solid #f7f6f6;
+    box-shadow: none;
+  }
+
+.vertical-timeline-element-content-arrow {
+    border-right-color: #f7f6f6;
 }
 
 .vertical-timeline-element-content {
-    background: #ffffff;
+    background: #f7f6f6;
     color: #2c3e50;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    font-size: large;
+    /* max-width: 90%; */
   }
+
+.vertical-timeline-element-content .vertical-timeline-element-date {
+    font-weight: 900;
+    font-size: large;
+}
   
   .vertical-timeline-element-content h3,
   .vertical-timeline-element-content h4 {
