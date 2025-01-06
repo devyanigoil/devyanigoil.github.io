@@ -4,11 +4,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 const Sidebar = () => {
+  const imageURL = `${process.env.PUBLIC_URL}/profilePhoto.jpg`;
     return (
       <div className="sidebar">
         <div className="profile">
           <img
-            src="${process.env.PUBLIC_URL}/profilePhoto.jpg"
+            src = {imageURL}
             alt="DEVYANI GOIL"
             className="profile-photo"
           />
