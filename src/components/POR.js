@@ -11,7 +11,7 @@ const WorkExperiencePage = () => {
       subtitle: "The Showstoppers Dance Crew, MIT Manipal",
       duration: "Jul 2021 - May 2022",
       description: [
-        "Led a team of 200 dancers, fostering a sense of teamwork and excellence.",
+        "Led a team of 200 dancers, fostering a sense of teamwork.",
         "Organized multiple workshops with renowned dancers, honing my organizational skills.",
         "Learnt the importance of collaboration with professionals to enhance the team's skills and broaden their exposure.",
         "Motivated the team to excel in multiple inter-college competitions, promoting a culture of discipline, perseverance, and mutual support, which resulted in outstanding performances and accolades. ",

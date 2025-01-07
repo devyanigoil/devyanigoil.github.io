@@ -29,11 +29,12 @@
   }
   
   .profile-photo {
-    width: 8rem; /* Scales with the screen */
-    height: 10rem; /* Scales with the screen */
+    width: 12rem; /* Scales with the screen */
+    height: 12rem; /* Scales with the screen */
     border-radius: 50%;
     margin-bottom: 0.5rem;
     margin-top: 1.2rem;
+    object-fit: cover;
   }
 
   .designation {
