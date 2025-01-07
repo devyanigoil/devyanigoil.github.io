@@ -12,12 +12,16 @@ const SkillsPage = () => {
         items: ["SQL, Victoria Metrics, MongoDB"]
     },
     {
-        category: ["DevOps and CI/CD Tools:"], 
-        items: ["Kubernetes, Docker, Grafana, Gitlab, Linode, Jenkins, Git, Loki, AWS, Prometheus"]
+        category: ["Containerization and Web Technologies:"], 
+        items: ["Docker, Kubernetes, React"]
     },
     {
-        category: ["Technologies:"], 
-        items: ["Flask, mTLS, REST APIs, React, SpringBoot"]
+        category: ["DevOps and CI/CD Tools:"], 
+        items: ["Gitlab, Jenkins, Git, AWS, Linode, Grafana, Prometheus, Loki"]
+    },
+    {
+        category: ["Frameworks and Application Architecture:"], 
+        items: ["Flask, SpringBoot, Rest APIs, mTLS"]
     }
 ];
 

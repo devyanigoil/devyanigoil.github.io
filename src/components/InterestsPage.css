@@ -1,7 +1,8 @@
 .interests-page {
     /* min-height: 100vh; */
     /* margin: 20px auto; */
-    max-width: 90%;
+    /* max-width: 90%; */
+    text-align: left;
   }
   
   .interests-page h1 {

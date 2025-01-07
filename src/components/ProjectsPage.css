@@ -2,6 +2,7 @@
     /* padding: 50px; */
     margin-right: 10rem;
     text-align: center;
+    width: 100%;
     /* background-color: #f4f4f4; */
   }
   
@@ -80,6 +81,7 @@
     justify-content: center;
     margin-top: 40px;
     text-align: center;
+    width: 100%;
   }
   
   .load-more a{

@@ -66,6 +66,7 @@ const HomePage = () => {
         I am a <span>{text}</span>
         {cursorVisible && <span className="cursor">|</span>} {/* Cursor */}
       </h2>
+      <hr></hr>
     </div>
   );
 };
