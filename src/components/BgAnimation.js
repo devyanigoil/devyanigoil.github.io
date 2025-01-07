@@ -14,7 +14,7 @@ function BgAnimation() {
     },
     particles: {
       number: {
-        value: 35,
+        value: 25,
         density: {
           enable: true,
           area: 1000
