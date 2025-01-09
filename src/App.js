@@ -11,16 +11,40 @@ import Certifications from './components/Certifications';
 import ContactPage from './components/ContactPage';
 import ProjectsPage from './components/ProjectsPage';
 import BgAnimation from './components/BgAnimation';
+import React, { useState, useEffect } from "react";
 
 function App() {
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+  const updateScreenSize = () => {
+    setIsSmallScreen(window.innerWidth < 768);
+  };
+
+  useEffect(() => {
+    updateScreenSize();
+
+    // Add event listener to handle screen resize
+    window.addEventListener("resize", updateScreenSize);
+
+    // Cleanup event listener on component unmount
+    return () => window.removeEventListener("resize", updateScreenSize);
+  }, []);
+  
   return (
       <div className="App">
-        <div className="bg-animation"> 
-          <BgAnimation />
-        </div>
+        {!isSmallScreen  && (
+          <div className="bg-animation"> 
+            <BgAnimation />
+          </div>
+        )}
         <Sidebar />
         <div className="content">
           <div id="home" className="section">
+            {isSmallScreen  && (
+              <div className="bg-animation"> 
+                <BgAnimation />
+              </div>
+            )}
             <HomePage />
           </div>
           <div id="about" className="section">

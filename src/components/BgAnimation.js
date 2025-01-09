@@ -3,15 +3,20 @@ import Particles from "react-particles";
 import { loadFull } from "tsparticles";
 
 function BgAnimation() {
-    // const [windowHeight, setHeight] = useState(window.innerHeight);
+    const [densityArea, setDensityArea] = useState(1000);
+    const [maxBallSize, setMaxBallSize] = useState(8);
 
-//   useEffect(() => {
-//       if (window.innerWidth < 768) {
-//         setHeight(window.innerHeight+"px");
-//       }
-//       else
-//         setHeight("100%");
-//     }, []);
+
+  useEffect(() => {
+      if (window.innerWidth < 768) {
+        setDensityArea(250);
+        setMaxBallSize(4);
+      }
+      else{
+        setDensityArea(800);
+        setMaxBallSize(8);
+      }
+    }, []);
 
   const options = {
     fullScreen: {
@@ -21,14 +26,13 @@ function BgAnimation() {
       position: "absolute",
       width: "100%",
       height: "100%"
-    //   height: `${windowHeight}`,
     },
     particles: {
       number: {
-        value: 25,
+        value: 30,
         density: {
           enable: true,
-          area: 1000
+          area: `${densityArea}`
         }
       },
       color: {
@@ -41,7 +45,7 @@ function BgAnimation() {
         value: 1
       },
       size: {
-        value: { min: 1, max: 8 }
+        value: { min: 2, max: `${maxBallSize}` }
       },
       links: {
         enable: true,
@@ -56,8 +60,11 @@ function BgAnimation() {
         direction: "none",
         random: false,
         straight: false,
-        outModes: "out"
-      }
+        outModes: "bounce",
+        attract: {
+            enable: true
+          }
+      },
     },
     interactivity: {
       events: {

@@ -13,6 +13,7 @@
   box-shadow: 0.2rem 0 0.5rem rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
   z-index: 1000;
+  overflow-y: auto;
   /* margin-left: 9rem; */
 }
 
@@ -73,7 +74,8 @@
 .social-icons {
   display: flex;
   gap: 0.7rem;
-  margin-top: 2rem;
+  margin-top: 0.5rem;
+  margin-bottom: 3rem;
 }
 
 .social-icons a {
@@ -111,5 +113,11 @@
 
   .sidebar-toggle {
     display: none;
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 0.7rem;
+    margin-top: 2rem;
   }
 }

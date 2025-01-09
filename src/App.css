@@ -48,6 +48,10 @@
   padding: 3rem 1rem;
 }
 
+.bg-animation{
+  z-index: -1;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
