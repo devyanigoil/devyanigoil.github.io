@@ -1,8 +1,18 @@
-import React from "react";
+import React , { useState, useEffect } from "react";
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
 
 function BgAnimation() {
+    // const [windowHeight, setHeight] = useState(window.innerHeight);
+
+//   useEffect(() => {
+//       if (window.innerWidth < 768) {
+//         setHeight(window.innerHeight+"px");
+//       }
+//       else
+//         setHeight("100%");
+//     }, []);
+
   const options = {
     fullScreen: {
       enable: false,
@@ -10,7 +20,8 @@ function BgAnimation() {
     style: {
       position: "absolute",
       width: "100%",
-      height: "100%",
+      height: "100%"
+    //   height: `${windowHeight}`,
     },
     particles: {
       number: {

@@ -1,0 +1,22 @@
+.bg-animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: linear-gradient(135deg, rgba(46, 204, 113, 0.6), rgba(52, 152, 219, 0.6)); */
+    z-index: 0; /* Place it behind everything else */
+    pointer-events: none; /* Ensures the animation doesn't block interactions */
+  }
+
+  @media (max-width: 768px) {
+    .bg-animation {
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0; /* Place it behind everything else */
+      pointer-events: none; /* Ensures the animation doesn't block interactions */
+    }
+  }

@@ -1,84 +1,115 @@
 .sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 15rem; /* Sidebar width based on screen size */
-    height: 100vh;
-    background-color: #4c8055;
-    color: #d9dad9;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem; /* Padding around content */
-    box-shadow: 0.2rem 0 0.5rem rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 15rem;
+  height: 100vh;
+  background-color: #4c8055;
+  color: #d9dad9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  box-shadow: 0.2rem 0 0.5rem rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  z-index: 1000;
+  /* margin-left: 9rem; */
+}
+
+/* Sidebar closed (hidden off-screen) */
+.sidebar.closed {
+  transform: translateX(-100%);
+}
+
+/* Sidebar open (visible on-screen) */
+.sidebar.open {
+  transform: translateX(0);
+  height: 100%;
+  min-height: auto;
+}
+
+/* Profile Section */
+.profile h1 {
+  font-family: "EB Garamond", serif;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #ecf0f1;
+}
+
+.profile {
+  color: #d9dad9;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.profile-photo {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+  margin-top: 1.2rem;
+  object-fit: cover;
+}
+
+/* Navigation Links */
+.nav-links a {
+  text-decoration: none;
+  color: #ecf0f1;
+  margin: 0.3rem 0;
+  font-size: 0.8rem;
+  transition: color 0.3s ease;
+  margin-bottom: 0.8rem;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+  color: #d9dad9;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 0.7rem;
+  margin-top: 2rem;
+}
+
+.social-icons a {
+  color: #d9dad9;
+  transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+}
+
+/* Toggle Button */
+.sidebar-toggle {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  /* background-color: #4c8055; */
+  color: #000000;
+  border: none;
+  background: none;
+  /* border-radius: 0.5rem; */
+  /* padding: 0.5rem 1rem; */
+  font-size: 1.5rem;
+  transform: scale(1.1, 0.8);
+  cursor: pointer;
+  z-index: 1100;
+}
+
+/* Hide toggle button on larger screens */
+@media (min-width: 768px) {
+  .sidebar.open {
+    transform: translateX(0); /*Sidebar always visible*/
     margin-left: 9rem;
   }
-  
-  .profile h1 {
-    font-family: "EB Garamond", serif; /* Replace 'Roboto' with your chosen font */
-    font-size: 2rem; /* Adjust size as needed */
-    font-weight: 800; /* Use a bold weight for emphasis */
-    color: #ecf0f1; /* Optional: Adjust color */
-  }
 
-  .profile {
-    color: #d9dad9;
-    display: block;
-    text-align: center;
-    margin-bottom: 2rem;
+  .sidebar-toggle {
+    display: none;
   }
-  
-  .profile-photo {
-    width: 12rem; /* Scales with the screen */
-    height: 12rem; /* Scales with the screen */
-    border-radius: 50%;
-    margin-bottom: 0.5rem;
-    margin-top: 1.2rem;
-    object-fit: cover;
-  }
-
-  .designation {
-    font-size: 0.8rem; /* Scales with user font preferences */
-    font-weight: 300;
-    margin-top: 1rem;
-  }
-  
-  .nav-links {
-    font-family: "Crimson Text", serif;
-    flex-grow: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .nav-links a {
-    text-decoration: none;
-    color: #ecf0f1;
-    margin: 0.3rem 0;
-    font-size: 0.8rem;
-    transition: color 0.3s ease;
-    margin-bottom: 0.8rem;
-  }
-  
-  .nav-links a:hover {
-    text-decoration: underline; /* Add underline on hover */
-    color: #d9dad9;
-  }
-  
-  .social-icons {
-    display: flex;
-    gap: 0.7rem;
-    margin-top: 2rem;
-  }
-  
-  .social-icons a {
-    color: #d9dad9;
-    margin: 0 0.5rem;
-    transition: transform 0.3s ease;
-  }
-  
-  .social-icons img:hover {
-    color: #d9dad9;
-    transform: scale(1.2);
-  }
-  
+}

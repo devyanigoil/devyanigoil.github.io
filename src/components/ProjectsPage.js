@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaSync } from "react-icons/fa";
 import './ProjectsPage.css';
 
@@ -55,13 +55,25 @@ const ProjectsPage = () => {
     },
   ];
 
+  const [activeCard, setActiveCard] = useState(null);
+
+  const handleCardToggle = (index) => {
+    setActiveCard((prev) => (prev === index ? null : index));
+  };
+
   return (
     <div className="projects-section">
       <h1>PROJECTS</h1>
       <div className="projects-container">
         {projects.map((project, index) => (
-          <div key={index} className="project-card" style={{ backgroundImage: `url(${project.img})` , backgroundSize: project.background}}>
-            <div className="overlay">
+          <div 
+          key={index} 
+          className={`project-card ${activeCard === index ? "active" : ""}`} 
+          style={{ backgroundImage: `url(${project.img})` , backgroundSize: project.background}} 
+          onTouchStart={() => handleCardToggle(index)}
+          onClick={() => handleCardToggle(index)} 
+          >
+            <div className={`overlay ${activeCard === index ? "visible" : ""}`}>
               <h2>{project.title}</h2>
               <a href={project.link} target="_blank" rel="noopener noreferrer">
               <p>PROJECT CODE</p> </a>
