@@ -14,7 +14,7 @@ function BgAnimation() {
       }
       else{
         setDensityArea(800);
-        setMaxBallSize(8);
+        setMaxBallSize(6);
       }
     }, []);
 
@@ -29,7 +29,7 @@ function BgAnimation() {
     },
     particles: {
       number: {
-        value: 30,
+        value: 25,
         density: {
           enable: true,
           area: `${densityArea}`
@@ -49,7 +49,7 @@ function BgAnimation() {
       },
       links: {
         enable: true,
-        distance: 150,
+        distance: 200,
         color: "#808080",
         opacity: 0.4,
         width: 1
