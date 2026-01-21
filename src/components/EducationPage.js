@@ -15,14 +15,14 @@ const EducationPage = () => {
       {/* First Section: Masters */}
       <div className="education-section">
         <button onClick={() => toggleSection("masters")} className="education-btn">
-          <span>Masters (2024 - 2026)</span>
+          <span>Masters (2024 - 2025)</span>
           <span className="toggle-symbol">{activeSection === "masters" ? "-" : "+"}</span>
         </button>
         {activeSection === "masters" && (
           <div className="education-details">
             <p>Masters in Computer Science</p>
             <p>University of Massachusetts, Amherst </p>
-            <p>GPA: 3.77/4</p>
+            <p>GPA: 3.92/4</p>
           </div>
         )}
       </div>

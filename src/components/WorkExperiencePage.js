@@ -7,6 +7,29 @@ import './WorkExperiencePage.css';
 const WorkExperiencePage = () => {
   const experiences = [
     {
+      title: "Software Engineer - Cloud Storage",
+      subtitle: "Apple",
+      duration: "Feb 2026 - Present",
+      description: [
+        "TBD"
+    ],
+      icon: <FaBriefcase />,
+      iconBg: "#00563B",
+    },
+    {
+      title: "Software Engineering  Intern",
+      subtitle: "Apple",
+      duration: "May 2025 - Aug 2025",
+      description: [
+        "Implemented distributed caching in Golang into the Bundle System, an object store for Simcloud - Apple’s internal batch compute platform that runs 1M+ concurrent jobs used by Hardware Technology teams for large scale chip testing.",
+        "Reduced download latency by >40% and increased cache hit rate by 300%",
+        "Achieved a 60% reduction in inbound bandwidth highlighting that more data is being served from distributed cache, significantly offloading backend threads.",
+        "Deployed the solution to production using Rio pipelines, ensuring reliability at scale and improving cluster performance."
+    ],
+      icon: <FaBriefcase />,
+      iconBg: "#F09090",
+    },
+    {
       title: "Software Engineer",
       subtitle: "Akamai Technologies",
       duration: "Aug 2023 - Aug 2024",

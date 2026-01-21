@@ -5,7 +5,7 @@ const SkillsPage = () => {
   const skills = [
     {
         category: ["Programming Language and Operating Systems:"], 
-        items: ["Python, C++, C, Java, HTML/CSS, Linux, Windows, Unix"]
+        items: ["Golang, Python, C++, C, Java, HTML/CSS, Linux, Windows, Unix"]
     },
     {
         category: ["Database and Time Series Database:"], 

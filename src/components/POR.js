@@ -7,6 +7,18 @@ import './POR.css';
 const WorkExperiencePage = () => {
   const experiences = [
     {
+      title: "Graduate Assistant",
+      subtitle: "University of Massachusetts, Amherst",
+      duration: "Sep 2025 - Dec 2025",
+      description: [
+        "Served as a Graduate Assistant and Grader for the graduate level Computer Networking course, evaluating weekly assignments and final exams for 20+ students.",
+        "Assessed student work on advanced networking topics including protocols, routing, congestion control and network performance, ensuring fair and consistent grading standards.",
+        "Provided detailed, constructive feedback to support student learning while coordinating closely with course instructors to maintain academic rigor and grading accuracy."
+    ],
+      icon: <FaPencilAlt />,
+      iconBg: "#003152",
+    },
+    {
       title: "Co-President",
       subtitle: "The Showstoppers Dance Crew, MIT Manipal",
       duration: "Jul 2021 - May 2022",

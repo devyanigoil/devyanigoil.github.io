@@ -5,7 +5,8 @@ import './ProjectsPage.css';
 const ProjectsPage = () => {
     const project1 = `${process.env.PUBLIC_URL}/UMateLogo.jpeg`;
     const project2 = `${process.env.PUBLIC_URL}/TravelPlannerLogo.jpeg`;
-    const project3 = `${process.env.PUBLIC_URL}/WeatherApp.png`;
+    // const project3 = `${process.env.PUBLIC_URL}/WeatherApp.png`;
+    const project3 = `${process.env.PUBLIC_URL}/EcoScore.jpeg`;
     const project4 = `${process.env.PUBLIC_URL}/TCPServer.png`;
     const project5 = `${process.env.PUBLIC_URL}/ObjectDetection.png`;
     const project6 = `${process.env.PUBLIC_URL}/PacketSniffer.jpg`;
@@ -26,12 +27,19 @@ const ProjectsPage = () => {
       background: "auto",
     },
     {
-      title: "Weather App",
-      description: "A web app built with HTML, CSS, and Node.js that provides real-time weather information for any location using the open source APIs from openweathermap.",
+      title: "Eco Score",
+      description: "A mobile app that tracks carbon footprint across multiple lifestyle categories like shopping list, transportation, energy consuption and converts all actions into a universal score redeemable for real cashback, discounts, and rewards at participating stores.",
       img: project3,
-      link: "https://github.com/devyanigoil/WeatherApp",
+      link: "https://github.com/devyanigoil/EcoScore",
       background: "auto",
     },
+    // {
+    //   title: "Weather App",
+    //   description: "A web app built with HTML, CSS, and Node.js that provides real-time weather information for any location using the open source APIs from openweathermap.",
+    //   img: project3,
+    //   link: "https://github.com/devyanigoil/WeatherApp",
+    //   background: "auto",
+    // },
     {
       title: "Concurrent TCP Server",
       description: "Instrumented multithreading with mutex lock in C to handle each TCP client connection to achieve a concurrent server. Incorporated CRUD (create, read, update, delete) functionality.",

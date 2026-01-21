@@ -13,13 +13,14 @@ const ContactPage = () => {
         </div>
         <div className="contact-item">
           <FaMapMarkerAlt className="location-icon" />
-          <span><strong>Location:</strong> Amherst, MA, USA</span>
+          <span><strong>Location:</strong> Cupertino, CA, USA</span>
         </div>
       </div>
       <div className="map-container">
         <iframe
           title="map"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721447.95101297!2d-75.67000994217914!3d42.142087767245414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e6ce020a71240f%3A0xd5751d15974c2fdc!2sAmherst%2C%20MA%2C%20USA!5e0!3m2!1sen!2sin!4v1736163738783!5m2!1sen!2sin"
+          src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50774.22918168268!2d-122.08516967527868!3d37.30960462772207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb4571bd377ab%3A0x394d3fe1a3e178b4!2sCupertino%2C%20CA%2C%20USA!5e0!3m2!1sen!2sin!4v1769004248949!5m2!1sen!2sin"
+          // src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721447.95101297!2d-75.67000994217914!3d42.142087767245414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e6ce020a71240f%3A0xd5751d15974c2fdc!2sAmherst%2C%20MA%2C%20USA!5e0!3m2!1sen!2sin!4v1736163738783!5m2!1sen!2sin"
           width="100%"
           height="400"
           style={{ border: 0 }}

@@ -30,10 +30,10 @@ const InterestsPage = () => {
       description: "Designing robust systems for growth and scalability.",
     },
     {
-        title: "DevOps",
+        title: "Dsitributed Systems",
         icon: faServer,
         iconClass: "icon-devops",
-        description: "Automating deployments and streamlining development.",
+        description: "Designing a fault tolerant pipeline that processes user data asynchronously across multiple services.",
     },
     {
       title: "Painting",
