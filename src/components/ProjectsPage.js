@@ -31,7 +31,7 @@ const ProjectsPage = () => {
       description: "A mobile app that tracks carbon footprint across multiple lifestyle categories like shopping list, transportation, energy consuption and converts all actions into a universal score redeemable for real cashback, discounts, and rewards at participating stores.",
       img: project3,
       link: "https://github.com/devyanigoil/EcoScore",
-      background: "auto",
+      background: "cover",
     },
     // {
     //   title: "Weather App",
